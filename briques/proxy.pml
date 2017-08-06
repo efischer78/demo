@@ -1,5 +1,5 @@
 dependsOn "frontend"
-srcRoot ("git@repository.iodasolutions.com:eric/redistomcat.git") {
+srcRoot ("git@github.com:eric/redistomcat.git") {
     path ("nginx")
 }
 product (id: 'nginx') {
