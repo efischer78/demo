@@ -1,5 +1,5 @@
 dependsOn "session"
-srcRoot ("git@github.com:eric/redistomcat.git") {
+srcRoot ("git@github.com:efischer78/redistomcat.git") {
     path ("tomcat-redis-session-manager") {
         from "build/libs/tomcat-redis-session-manager-2.0.0.jar" to "lib"
     }
