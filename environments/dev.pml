@@ -3,8 +3,8 @@ provider "virtualbox"
 host("dev.host") {
     briques "frontend","session"
     properties(TOMCAT_HTTP_PORT: "8081",
-               REDIS_LOG : "e:/temp/log/redis",
-               TOMCAT_LOG_DIR: "E:/temp/log/apacheTomcat")
+               REDIS_LOG : "c:/temp/log/redis",
+               TOMCAT_LOG_DIR: "c:/temp/log/apacheTomcat")
 }
 
 brique(name: "frontend") {
