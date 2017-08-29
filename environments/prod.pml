@@ -1,24 +1,30 @@
-provider "virtualbox"
+provider "metal"
 
-host("proxy") {
-    briques "proxy"
-    properties(NGINX_HTTP_PORT: "80")
-}
-host("session") {
+host("192.168.99.2") {
     briques "session"
+    user "vagrant"
+    keyPath "E:/temp/demo/vagrant/.vagrant/machines/session/virtualbox/private_key"
 }
-host("frontend.1") {
+host("192.168.99.3") {
     briques "frontend"
-    memory 1024
+    user "vagrant"
+    keyPath "E:/temp/demo/vagrant/.vagrant/machines/frontend1/virtualbox/private_key"
 }
-host("frontend.2") {
+host("192.168.99.4") {
     briques "frontend"
-    memory 1024
+    user "vagrant"
+    keyPath "E:/temp/demo/vagrant/.vagrant/machines/frontend2/virtualbox/private_key"
 }
-/*host("jenkins") {
+host("192.168.99.5") {
+    briques "proxy"
+    user "vagrant"
+    keyPath "E:/temp/demo/vagrant/.vagrant/machines/proxy/virtualbox/private_key"
+}
+host("192.168.99.6") {
     briques "jenkins"
-    properties(NGINX_HTTP_PORT: "8080")
-}*/
+    user "vagrant"
+    keyPath "E:/temp/demo/vagrant/.vagrant/machines/jenkins/virtualbox/private_key"
+}
 
 
 

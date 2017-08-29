@@ -1,2 +1,2 @@
-name: demo
-defaultenv: qa
+name: test/demo
+defaultenv: dev
