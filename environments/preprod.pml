@@ -12,6 +12,7 @@ host("frontend2") {
     briques "frontend"
 }
 host("proxy") {
+    properties(NGINX_HTTP_PORT: "80")
     briques "proxy"
 }
 host("jenkins") {
