@@ -8,9 +8,13 @@ host("dev.host") {
 }
 
 brique(name: "frontend") {
-    override """
-    context {
-        reloadable true
-    }
+/*    override """
+    brique.getSrcRoots()[0].location("C:/temp/demo/redistomcat")
 """
+*/
+    productOverride """
+        context {
+            reloadable true
+        }
+    """
 }

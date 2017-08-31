@@ -1,2 +1,2 @@
-name: demo
-defaultenv: dev
+name: test/demo
+defaultenv: preprod
