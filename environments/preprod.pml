@@ -16,5 +16,6 @@ host("proxy") {
     briques "proxy"
 }
 host("jenkins") {
+    properties(JENKINS_HTTP_PORT: "8080")
     briques "jenkins"
 }
